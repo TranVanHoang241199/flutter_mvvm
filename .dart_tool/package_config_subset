@@ -78,6 +78,10 @@ dots_indicator
 2.12
 file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/dots_indicator-2.0.0/
 file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/dots_indicator-2.0.0/lib/
+dotted_border
+2.12
+file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/dotted_border-2.0.0/
+file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/dotted_border-2.0.0/lib/
 equatable
 2.12
 file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/equatable-2.0.2/
@@ -250,6 +254,14 @@ path
 2.12
 file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0/
 file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0/lib/
+path_drawing
+2.12
+file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/path_drawing-0.5.1/
+file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/path_drawing-0.5.1/lib/
+path_parsing
+2.12
+file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/path_parsing-0.2.1/
+file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/path_parsing-0.2.1/lib/
 path_provider
 2.12
 file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.2/

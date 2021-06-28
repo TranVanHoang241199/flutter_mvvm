@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_app/src/resource/database/app_database.dart';
 import 'package:flutter_app/src/utils/utils.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
@@ -17,6 +18,10 @@ void main() async {
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   await Firebase.initializeApp();
   await AppPref.initListener();
+
+  /// Initialize sq-lite
+  SqliteDB();
+  // await db.countTable();
   notificationInitialed();
   runApp(RestartWidget(child: App()));
 }
@@ -66,7 +71,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
       navigatorObservers: <NavigatorObserver>[MyApp.observer],
       locale: Locale('vi', 'VN'),
       translationsKeys: AppTranslation.translations,
-      home: SplashSceenState(),
+      home: SplashSceen(),
       onGenerateRoute: Routers.generateRoute,
       builder: EasyLoading.init(),
     );

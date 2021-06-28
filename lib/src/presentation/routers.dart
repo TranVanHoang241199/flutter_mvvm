@@ -1,22 +1,46 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/src/presentation/home/home.dart';
+import 'package:flutter_app/src/presentation/shownotes/shown.dart';
+import 'package:flutter_app/src/presentation/speak/speak.dart';
 
+import 'Setting/setting.dart';
+import 'Shownotesbook/shownb.dart';
+import 'content/content.dart';
 import 'navigation/navigation_screen.dart';
 
 class Routers {
   static const String navigation = "/navigation";
+  static const String home = "/home";
+  static const String setting = "/setting";
+  static const String ShowNd = "/ShowNd";
+  static const String ShowN = "/ShowN";
+  static const String Speak = "/Speak";
+  static const String Content = "/Content";
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     var arguments = settings.arguments;
     switch (settings.name) {
       case navigation:
         return animRoute(NavigationScreen(), name: navigation);
-        break;
+      case home:
+        return animRoute(HomeScreen(), name: home, beginOffset: _left);
+      case setting:
+        return animRoute(SettingScreen(), name: setting, beginOffset: _left);
+      case ShowNd:
+        return animRoute(ShowNdScreen(), name: ShowNd, beginOffset: _right);
+      case ShowN:
+        return animRoute(ShowNScreen(), name: ShowN, beginOffset: _right);
+      case Speak:
+        return animRoute(SpeakSc(), name: Speak, beginOffset: _top);
+      case Content:
+        return animRoute(ContentScreen(), name: Content, beginOffset: _center);
+
       default:
-        return animRoute(Container(
-            child:
-                Center(child: Text('No route defined for ${settings.name}'))
-          ), name: "/error"
-        );
+        return animRoute(
+            Container(
+                child: Center(
+                    child: Text('No route defined for ${settings.name}'))),
+            name: "/error");
     }
   }
 

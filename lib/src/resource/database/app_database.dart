@@ -1,3 +1,57 @@
+import "dart:io" as io;
+import "package:path/path.dart";
+import 'package:sqflite/sqflite.dart';
+import 'package:path_provider/path_provider.dart';
+
+class SqliteDB {
+  static final SqliteDB _instance = new SqliteDB.internal();
+
+  factory SqliteDB() => _instance;
+  static late Database _db;
+
+  Future<Database> get db async {
+    // ignore: unnecessary_null_comparison
+    if (_db != null) {
+      return _db;
+    }
+    _db = await initDb();
+    return _db;
+  }
+
+  SqliteDB.internal();
+
+  /// Initialize DB
+  initDb() async {
+    io.Directory documentDirectory = await getApplicationDocumentsDirectory();
+    String path = join(documentDirectory.path, "myDatabase.db");
+    var taskDb = await openDatabase(path, version: 1);
+    return taskDb;
+  }
+
+  Future countTable() async {
+    var dbClient = await db;
+    var res = await dbClient.rawQuery("""SELECT count(*) as count FROM NoteBook
+         """);
+    return res[0]['count'];
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import 'package:moor/moor_web.dart';
 // import 'package:moor/moor.dart';
 // import 'database.dart';

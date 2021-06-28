@@ -5,4 +5,8 @@ import '../presentation.dart';
 
 class SplashViewModel extends BaseViewModel {
   init() async {}
+
+  goToHomeScreen() {
+    Get.offAndToNamed(Routers.home);
+  }
 }

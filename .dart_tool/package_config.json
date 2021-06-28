@@ -122,6 +122,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "dotted_border",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/dotted_border-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "equatable",
       "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/equatable-2.0.2",
       "packageUri": "lib/",
@@ -404,6 +410,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "path_drawing",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/path_drawing-0.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "path_parsing",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/path_parsing-0.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path_provider",
       "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.2",
       "packageUri": "lib/",
@@ -620,7 +638,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-06-12T19:05:57.320424Z",
+  "generated": "2021-06-28T11:19:12.156431Z",
   "generator": "pub",
   "generatorVersion": "2.13.1"
 }

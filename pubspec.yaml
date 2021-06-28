@@ -9,10 +9,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  sqflite: ^2.0.0+3
+  path_provider: ^2.0.2
+  
+ 
   flutter_localizations:
     sdk: flutter
 
   introduction_screen: ^2.1.0
+  dotted_border: ^2.0.0
+  
 
   # Common
   get: ^4.1.4
